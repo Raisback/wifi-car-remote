@@ -1,15 +1,17 @@
-## 💡 ESP8266 Wi-Fi HTTP Car Remote Control
+##  ESP8266 Wi-Fi HTTP Car Remote Control
 
-#### This project provides a full-stack, local network remote control solution for a robotic car. It combines custom ESP8266 Firmware (a lightweight Web Server) and a dedicated Android Client Application to control the car's movements using simple HTTP GET requests.  
+![Photo of the final assembled remote control car](App_assets/final.jpg)
 
-### ✨ Features
+This project provides a full-stack, local network remote control solution for a robotic car. It combines custom ESP8266 Firmware (a lightweight Web Server) and a dedicated Android Client Application to control the car's movements using simple HTTP GET requests.  
+
+###  Features
 
 * Two-Part System: ESP8266 Firmware (car_code.ino) and Android Client App (Car_Remote_App).
 * Dedicated Access Point (AP): The ESP8266 creates its own Wi-Fi network (RAIS) with password 12345678 for direct, secure, and local control.
 * Simple Communication: Uses lightweight HTTP GET requests for instantaneous command execution.
 * Car Control Logic: Specific endpoints are implemented for Forward, Backward, Left, Right, Horn, and Stop functionality.
 
-### 🛠️ Getting Started
+###  Getting Started
 
 #### 1. Prerequisites
 
@@ -53,7 +55,7 @@ Ensure you have the following tools and hardware:
 
 ### 🔌 Hardware Wiring Diagram
 
-#### Based on the pin definitions in car_code.ino, here is the required pinout. These ESP8266 GPIO pins must be connected to the respective control inputs on your motor driver and horn circuit.
+ Based on the pin definitions in car_code.ino, here is the required pinout. These ESP8266 GPIO pins must be connected to the respective control inputs on your motor driver and horn circuit.
 
 | Function  | Define in Code |ESP8266 GPIO Pin |
 | ------------- |:-------------:|:-------------:|
@@ -66,9 +68,9 @@ Ensure you have the following tools and hardware:
 
 ##### Wiring Note: Connect the GPIO pins listed above to the corresponding inputs on your Motor Driver (e.g., IN1, IN2, IN3, IN4).  Remember to power the ESP8266, Motor Driver, and Motors appropriately.
 
-### 🌐 HTTP API Reference (Car Control Endpoints)
+### HTTP API Reference (Car Control Endpoints)
 
-#### The ESP8266 Web Server listens on port 80 for the following commands. All commands are sent via simple HTTP GET requests. Each movement command automatically sets the other movement pins LOW to ensure clean, dedicated control.
+ The ESP8266 Web Server listens on port 80 for the following commands. All commands are sent via simple HTTP GET requests. Each movement command automatically sets the other movement pins LOW to ensure clean, dedicated control.
 
 | Function  | Endpoint Command |Example Request (when connected to Wi-Fi) |
 | ------------- |:-------------:|:-------------:|
@@ -80,12 +82,12 @@ Ensure you have the following tools and hardware:
 
 
 
-### 🤝 Contribution
+###  Contribution
 
-#### Contributions are welcome! If you have suggestions for improving the code, performance, or documentation, please open an issue to discuss proposed features or submit a pull request with your changes.
+ Contributions are welcome! If you have suggestions for improving the code, performance, or documentation, please open an issue to discuss proposed features or submit a pull request with your changes.
 
-### ⚖️ License
+###  License
 
-#### This project is open-source and licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 
