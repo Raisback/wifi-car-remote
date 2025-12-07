@@ -1,0 +1,68 @@
+==================================
+
+IGNORING ANDROID/GRADLE BUILD FILES
+
+==================================
+
+Android-specific files generated inside the Car_Remote_App directory
+
+/Car_Remote_App/local.properties
+/Car_Remote_App/.idea/workspace.xml
+/Car_Remote_App/.idea/libraries/
+/Car_Remote_App/build/
+/Car_Remote_App/captures/
+/Car_Remote_App/.externalNativeBuild/
+
+General Gradle/Build outputs that can appear anywhere (or within the app dir)
+
+.DS_Store
+.gradle
+*.class
+/gen/
+/out/
+*.iml
+
+Android Studio (IDE) files
+
+.idea
+.vscode
+*.apk
+*.ap_
+*.aab
+*.aar
+
+User specific configuration for Android Studio
+
+/Car_Remote_App/.idea/caches/
+/Car_Remote_App/.idea/misc.xml
+/Car_Remote_App/.idea/modules.xml
+/Car_Remote_App/.idea/runConfigurations.xml
+/Car_Remote_App/.idea/vcs.xml
+
+==================================
+
+IGNORING ESP8266/ARDUINO FILES
+
+==================================
+
+Temporary files created by the Arduino IDE
+
+*.tmp
+*.elf
+*.bin
+*.hex
+
+PlatformIO build environments 
+
+.pio/
+/platformio.ini
+
+Arduino IDE/Build folder remnants
+
+/esp8266/build/
+/esp8266/cache/
+/esp8266/.build/
+*.o
+*.d
+*.old
+*.bak

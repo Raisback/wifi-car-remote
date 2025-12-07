@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CarRemote</string>
+    <string name="fwd">Accelerate</string>
+    <string name="bwd">Reverse</string>
+    <string name="lft">left</string>
+    <string name="rgt">Right</string>
+</resources>
